@@ -2,26 +2,43 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from'axios';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './Registro.css';
+
 
 
 function Registro(){
     
+    const[tusername,setusername]=useState('');
     const[tnombre,setnombre]=useState('');
+    const[tapellido,setapellido]=useState('');
     const[temail,setemail]=useState('');
     const[tcontra,setcontra]=useState('');
+    const[trol,setrol]=useState('');
     const[timagen,setimagen]=useState(null);
+    const [tfechaNacimiento, setfechaNacimiento] = useState('');
+    const [preview, setPreview] = useState(null);
     const nav = useNavigate();
 
+      // Manejar previsualización de imagen
+      const handleImageChange = (e) => {
+        const file = e.target.files[0];
+        setimagen(file);
+        setPreview(file ? URL.createObjectURL(file) : null);
+    };
    
     function sentDatos(e){
         e.preventDefault();
         
         const FrmData = new FormData
 
-        FrmData.append("user", tnombre);
+        FrmData.append("user", tusername);
+        FrmData.append("name", tnombre)
+        FrmData.append("apellido", tapellido)
         FrmData.append("email",temail);
         FrmData.append("passw",tcontra);
+        FrmData.append("rol",trol);
         FrmData.append("ImgFile", timagen);
+        FrmData.append("fechaNacimiento", tfechaNacimiento);
       axios.post("http://localhost:3001/create",FrmData,
         {
           headers:{'Content-Type': 'multipart/form-data'}
@@ -47,35 +64,57 @@ function Registro(){
       
     }
 
- return(
-    <form>
-      <h1 Registro></h1>
-          <div class="mb-3">
-    <label for="exampleInputName" class="form-label">Name</label>
-    <input onChange={(e)=>setnombre(e.target.value)}  type="name" class="form-control" id="exampleInputName" aria-describedby="NameHelp"></input>
-    <div id="NameHelp" class="form-text">We'll never share your name with anyone else.</div>
-        </div>
-        <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input onChange={(e)=>setemail(e.target.value)} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input onChange={(e)=>setcontra(e.target.value)} type="password" class="form-control" id="exampleInputPassword1"></input>
-        </div>
-        <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <div class="mb-3">
-    <label for="exampleInputfoto" class="form-label">imagen</label>
-    <input onChange={(e)=>setimagen(e.target.files[0])} type="file" class="form-control" id="exampleInputfoto"></input>
-        </div>
-   
-    <button onClick={sentDatos} type="submit" class="btn btn-primary">Submit</button>
-    <Link to="/Login" class="btin btn-outliner-primary">Inicio de sesion </Link>
-    </form>
- );
+    return (
+      
+      
+      <div className="registro-container">
+          <h1>Registro</h1>
+          <div className="separator"></div>
+
+          <div className="avatar-container">
+          <img src={preview || "/Recursos/icon_user.png"} alt="Avatar" className="avatar" />
+          </div>
+          <form onSubmit={sentDatos} className="form-group-container">
+    <div className="form-group">
+        <label>Nombre</label>
+        <input type="text" className="form-control" value={tnombre} onChange={(e) => setnombre(e.target.value)} />
+    </div>
+    <div className="form-group">
+        <label>Apellido</label>
+        <input type="text" className="form-control" value={tapellido} onChange={(e) => setapellido(e.target.value)} />
+    </div>
+    <div className="form-group">
+        <label>Username</label>
+        <input type="text" className="form-control" value={tusername} onChange={(e) => setusername(e.target.value)} />
+    </div>
+    <div className="form-group">
+        <label>Correo</label>
+        <input type="email" className="form-control" value={temail} onChange={(e) => setemail(e.target.value)} />
+    </div>
+    <div className="form-group">
+        <label>Contraseña</label>
+        <input type="password" className="form-control" value={tcontra} onChange={(e) => setcontra(e.target.value)} />
+    </div>
+    <div className="form-group">
+        <label>Rol</label>
+        <select className="form-control" value={trol} onChange={(e) => setrol(e.target.value)}>
+            <option value="1">Usuario</option>
+            <option value="2">Admin</option>
+        </select>
+    </div>
+    <div className="form-group full-width">
+        <label>Avatar</label>
+        <input type="file" className="form-control" onChange={handleImageChange} />
+    </div>
+    <div className="form-group full-width">
+        <label>Fecha de Nacimiento</label>
+        <input type="date" className="form-control" value={tfechaNacimiento} onChange={(e) => setfechaNacimiento(e.target.value)} />
+    </div>
+    <button type="submit" className="btn btn-primary full-width">Registrarse</button>
+    <Link to="/Login" className="btn-link">Inicio de Sesión</Link>
+</form>
+
+      </div>
+  );
 }
 export default Registro;
