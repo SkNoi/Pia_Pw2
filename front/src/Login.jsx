@@ -52,7 +52,7 @@ function Login(){
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
     <button onClick={login} type="submit" class="btn btn-primary">Submit</button>
-     <Link to="/">Registrarse </Link>
+     <Link to="/Registro">Registrarse </Link>
     </form>
  );
 }
