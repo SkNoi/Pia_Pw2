@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from'axios';
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Registro.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 
@@ -65,8 +67,8 @@ function Registro(){
     }
 
     return (
-      
-      
+      <>
+      <Navbar /> {/* Usar el Navbar */}
       <div className="registro-container">
           <h1>Registro</h1>
           <div className="separator"></div>
@@ -111,10 +113,15 @@ function Registro(){
         <input type="date" className="form-control" value={tfechaNacimiento} onChange={(e) => setfechaNacimiento(e.target.value)} />
     </div>
     <button type="submit" className="btn btn-primary full-width">Registrarse</button>
-    <Link to="/Login" className="btn-link">Inicio de Sesión</Link>
+    
 </form>
 
+
       </div>
+
+      <Footer /> {}
+      </>
+      
   );
 }
 export default Registro;
