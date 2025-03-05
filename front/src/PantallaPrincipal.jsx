@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PantallaPrincipal.css";
-import NavbarPantallaPrincipal from "./NavbarPantallaPrincipal";
+import PantallaPrincipal from "./PantallaPrincipal";
 import Footer from "./Footer";
 
 // Componente de Galería
@@ -38,4 +38,4 @@ function PantallaPrincipal() {
   );
 }
 
-export default NavbarPantallaPrincipal;
+export default PantallaPrincipal;
