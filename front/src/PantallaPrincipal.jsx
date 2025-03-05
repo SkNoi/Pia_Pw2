@@ -11,7 +11,7 @@ const Galeria = () => {
   const imagenes = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"];
 
   return (
-    <div className="p-4">
+    <div className="PantallaPrincipal-Container">
       <h2 className="text-2xl font-bold mb-4">Galería de Imágenes</h2>
       <div className="flex gap-4 flex-wrap">
         {imagenes.map((src, index) => (
