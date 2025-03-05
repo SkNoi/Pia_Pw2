@@ -12,7 +12,7 @@ const Galeriasinlogin = () => {
     ];
   
     return (
-      <div className="dashboardsinlogin-Container">
+      <div className="Dashboardsinlogin2-Container">
         <div className="flex gap-2 flex-wrap">
           {imagenes.map((src, index) => (
             <img
