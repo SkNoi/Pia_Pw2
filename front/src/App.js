@@ -6,7 +6,7 @@ import Registro from './Registro2';
 import Login from './Login';
 import Imagenes from './Imagenes';
 import PantallaPrincipal from './PantallaPrincipal';
-import dashboardsinlogin from './dashboardsinlogin';
+import Dashboardsinlogin2 from '/Dashboardsinlogin2'
 import PerfilUsuario from './PerfilUsuario';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
       <Route path='/Registro' element={<Registro/>}></Route>
       <Route path='/Imagenes' element={<Imagenes/>}></Route>
       <Route path='/PantallaPrincipal' element={<PantallaPrincipal/>}></Route>
-      <Route path='/dashboardsinlogin' element={<dashboardsinlogin/>}></Route>
+      <Route path='/Dashboardsinlogin' element={<Dashboardsinlogin2/>}></Route>
        
       <Route path='/PerfilUsuario' element={<PerfilUsuario/>}></Route> 
     </Routes>
