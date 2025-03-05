@@ -18,7 +18,7 @@ function App() {
       <Route path='/Registro' element={<Registro/>}></Route>
       <Route path='/Imagenes' element={<Imagenes/>}></Route>
       <Route path='/PantallaPrincipal' element={<PantallaPrincipal/>}></Route>
-      <Route path='/Dashboardsinlogin' element={<Dashboardsinlogin2/>}></Route>
+      <Route path='/Dashboardsinlogin2' element={<Dashboardsinlogin2/>}></Route>
        
       <Route path='/PerfilUsuario' element={<PerfilUsuario/>}></Route> 
     </Routes>
