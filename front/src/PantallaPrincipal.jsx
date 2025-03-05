@@ -8,11 +8,11 @@ import Footer from "./Footer";
 
 // Componente de Galería
 const Galeria = () => {
-  const imagenes = ["imagen1.jpg", "imagen2.jpg", "imagen3.jpg"];
+  const imagenes = ["Postersonic3.jpg", "Mario bros.jpg", "hxh.jpg"];
 
   return (
     <div className="PantallaPrincipal-Container">
-      <h2 className="text-2xl font-bold mb-4">Galería de Imágenes</h2>
+      <h2 className="text-2xl font-bold mb-4"></h2>
       <div className="flex gap-4 flex-wrap">
         {imagenes.map((src, index) => (
           <img
