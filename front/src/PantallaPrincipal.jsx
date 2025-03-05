@@ -19,7 +19,7 @@ const Galeria = () => {
             key={index}
             src={src}
             alt={`Imagen ${index + 1}`}
-            className="w-20 h-auto rounded-lg shadow-md"
+            className="w-40 h-auto rounded-lg shadow-md"
           />
         ))}
       </div>
