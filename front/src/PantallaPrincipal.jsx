@@ -14,7 +14,7 @@ const Galeria = () => {
 
   return (
     <div className="PantallaPrincipal-Container p-4">
-      <div className="flex gap-4 flex-wrap">
+      <div className="flex gap-2 flex-wrap">
         {imagenes.map((src, index) => (
           <img
             key={index}
