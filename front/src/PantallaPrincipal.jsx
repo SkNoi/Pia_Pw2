@@ -7,9 +7,9 @@ import Footer from "./Footer";
 // Componente de Galería
 const Galeria = () => {
   const imagenes = [
-    "/Recursos/Postersonic3.jpg",
-    "/Recursos/Mario bros.jpg",
-    "/Recursos/hxh.jpg",
+    "/Recursos/Postersonic3.png",
+    "/Recursos/Mario bros.png",
+    "/Recursos/hxh.png",
   ];
 
   return (

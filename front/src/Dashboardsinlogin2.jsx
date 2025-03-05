@@ -6,9 +6,9 @@ import Footer from "./Footer";
 
 const Galeriasinlogin = () => {
     const imagenes = [
-      "/Recursos/Postersonic3.jpg",
+      "/Recursos/Postersonic3.png",
       "/Recursos/chip y dale al rescate.jpg",
-      "/Recursos/hxh.jpg",
+      "/Recursos/hxh.png",
     ];
   
     return (
