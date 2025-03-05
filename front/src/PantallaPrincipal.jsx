@@ -1,7 +1,4 @@
 import "bootstrap/dist/css/bootstrap.css";
-import axios from "axios";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import "./Pantalla Principal.css";
 import NavbarPantallaPrincipal from "./NavbarPantallaPrincipal";
 import Footer from "./Footer";
