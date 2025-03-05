@@ -1,0 +1,42 @@
+/* Navbar.css */
+.navbar {
+    background-color: #007bff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    margin-left: 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}

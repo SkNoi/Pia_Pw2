@@ -6,7 +6,7 @@ import Registro from './Registro2';
 import Login from './Login';
 import Imagenes from './Imagenes';
 import PantallaPrincipal from './PantallaPrincipal';
-import Dasboardsinlogin from './dashboardsinlogin';
+import dashboardsinlogin from './dashboardsinlogin';
 import PerfilUsuario from './PerfilUsuario';
 
 function App() {
