@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "./PantallaPrincipal.css";
+import "./Pantalla Principal.css";
 import NavbarPantallaPrincipal from "./NavbarPantallaPrincipal";
 import Footer from "./Footer";
 
