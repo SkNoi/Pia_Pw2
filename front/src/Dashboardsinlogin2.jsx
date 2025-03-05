@@ -27,7 +27,7 @@ const Galeriasinlogin = () => {
     );
   };
   
-  function dashboardsinlogin() {
+  function Dashboardsinlogin2() {
     return (
       <>
         <Navbardashsinlogin />
@@ -37,5 +37,5 @@ const Galeriasinlogin = () => {
     );
   }
   
-  export default dashboardsinlogin;
+  export default Dashboardsinlogin2;
   
