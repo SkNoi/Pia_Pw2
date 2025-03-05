@@ -5,6 +5,7 @@ import {BrowserRouter,Routes,Route, Navigate} from 'react-router-dom';
 import Registro from './Registro2';
 import Login from './Login';
 import Imagenes from './Imagenes';
+import PantallaPrincipal from './PantallaPrincipal';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/Registro' element={<Registro/>}></Route>
       <Route path='/Imagenes' element={<Imagenes/>}></Route>
+      <Route path='/PantallaPrincipal' element={<PantallaPrincipal/>}></Route> 
     </Routes>
     
     </BrowserRouter>
