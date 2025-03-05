@@ -59,6 +59,8 @@ function Login(){
     <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
+        
+        <button onClick={login} type="submit" class="btn btn-primary">Submit</button>
         <div className="separator"></div>
         <Link to="/Registro" className="no-account-link">
     NO tienes cuenta? <strong>Registrate</strong>

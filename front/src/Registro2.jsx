@@ -3,7 +3,6 @@ import axios from'axios';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Registro.css';
-import Navbar from './Navbar';
 import Footer from './Footer';
 
 
@@ -114,7 +113,7 @@ function Registro(){
     </div>
     <button type="submit" className="btn btn-primary full-width">Registrarse</button>
     
-    <Link to="/Login" className="no-account-link">
+    <Link to="/" className="no-account-link">
     Ya tienes una cuenta? <strong>  Inicia Session</strong>
   </Link>
 </form>

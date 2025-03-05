@@ -9,7 +9,7 @@ function Footer() {
                 <div className="footer-section">
                     <h4>Enlaces Rápidos</h4>
                     <ul>
-                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/PantallaPrincipal">Inicio</Link></li>
                         <li><Link to="/Registro">Registro</Link></li>
                         <li><Link to="/Login">Iniciar Sesión</Link></li>
                     </ul>
