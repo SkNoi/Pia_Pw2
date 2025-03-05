@@ -111,6 +111,6 @@ label {
 }
 .galeria img {
     width: 90px;
-    height: auto;
+    height: 100px;
     border-radius: 10px;
 }
