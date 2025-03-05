@@ -38,4 +38,4 @@ function PantallaPrincipal() {
   );
 }
 
-export default PantallaPrincipal;
+export default NavbarPantallaPrincipalPantallaPrincipal;
