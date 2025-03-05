@@ -110,7 +110,7 @@ label {
     gap: 10px;
 }
 .galeria img {
-    width: 20%;
-   
+    width: 40%;
+    height: 6%;
     border-radius: 10px;
 }
