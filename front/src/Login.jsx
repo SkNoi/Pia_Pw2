@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from'axios';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
+import './Login.css';
+import Footer from './Footer';
 
 
 function Login(){
@@ -36,8 +37,15 @@ function Login(){
    
 
  return(
+
+  <>
+  <div className="header">
+    <div className="logo">LA BUTACA CRITICA</div>
+</div>
+
+  <div className="login-container">
     <form>
-        <h1 Inicio de sesion></h1>   
+        <h1>Inicio de sesion</h1>   
         <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input onChange={(e)=>setemail(e.target.value)} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
@@ -51,9 +59,19 @@ function Login(){
     <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
+        
     <button onClick={login} type="submit" class="btn btn-primary">Submit</button>
-     <Link to="/">Registrarse </Link>
+    <div className="separator"></div>
+    <Link to="/" className="no-account-link">
+    NO tienes cuenta? <strong>Registrarse</strong>
+  </Link>
     </form>
+
+    </div>
+
+    <Footer /> {}
+    </>
+    
  );
 }
 export default Login;
