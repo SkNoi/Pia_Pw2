@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 // Componente de Galería
 const Galeria = () => {
-  const imagenes = ["./Postersonic3.jpg", "./Mario bros.jpg", "./hxh.jpg"];
+  const imagenes = ["/Postersonic3.jpg", "/Mario bros.jpg", "/hxh.jpg"];
 
   return (
     <div className="PantallaPrincipal-Container">
