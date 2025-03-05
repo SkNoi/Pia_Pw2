@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './NavbarPantallaPrincipal.css';
 
-function Navbar() {
+function NavbarPantallaPrincipal() {
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -11,18 +11,18 @@ function Navbar() {
                 </Link>
                 <ul className="navbar-menu">
                     <li className="navbar-item">
-                        <Link to="/PantallaPrincipal" className="navbar-link">
-                            Inicio
+                        <Link to="/" className="navbar-link">
+                            Reseñas
                         </Link>
                     </li>
                     <li className="navbar-item">
-                        <Link to="/Registro" className="navbar-link">
-                            Registro
+                        <Link to="/" className="navbar-link">
+                            Tendencias
                         </Link>
                     </li>
                     <li className="navbar-item">
-                        <Link to="/Login" className="navbar-link">
-                            Iniciar Sesión
+                        <Link to="/" className="navbar-link">
+                            Foros
                         </Link>
                     </li>
                 </ul>
@@ -31,4 +31,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default NavbarPantallaPrincipal;
