@@ -8,6 +8,7 @@ import Imagenes from './Imagenes';
 import PantallaPrincipal from './PantallaPrincipal';
 import  dashboardsinlogin from './dashboardsinlogin';
 
+import PerfilUsuario from './PerfilUsuario';
 
 function App() {
   return(
@@ -20,6 +21,7 @@ function App() {
       <Route path='/PantallaPrincipal' element={<PantallaPrincipal/>}></Route>
       <Route path='/dashboardsinlogin' element={<dashboardsinlogin/>}></Route>
        
+      <Route path='/PerfilUsuario' element={<PerfilUsuario/>}></Route> 
     </Routes>
     
     </BrowserRouter>

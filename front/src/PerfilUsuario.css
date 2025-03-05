@@ -1,0 +1,65 @@
+.perfil-usuario-container {
+    max-width: 1000px; /* Ajusta el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+    margin-bottom: 350px;
+}
+
+.perfil-content {
+    display: flex;
+    gap: 40px; /* Espacio entre el avatar y el formulario */
+}
+
+.avatar-container {
+    flex: 1;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px; /* Tamaño del avatar */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.formulario-perfil {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre los elementos del formulario */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 20px; /* Espacio entre las columnas */
+}
+
+.formulario-perfil .form-group {
+    width: 100%; /* Asegura que los campos ocupen todo el ancho */
+}
+
+.formulario-perfil .full-width {
+    grid-column: span 2; /* Ocupa dos columnas */
+}
+
+.separator {
+    border-bottom: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.no-account-link {
+    text-align: center;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.no-account-link:hover {
+    text-decoration: underline;
+}
