@@ -109,8 +109,4 @@ label {
     display: flex;
     gap: 10px;
 }
-.galeria img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
-}
+.imagen {width: 150px; /* Ancho fijo */height: auto; /* Altura automática para mantener la proporción */border-radius: 10px; /* Bordes redondeados */box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */object-fit: cover; /* Ajusta la imagen sin distorsionar */}
