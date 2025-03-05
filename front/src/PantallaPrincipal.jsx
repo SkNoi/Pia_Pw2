@@ -4,13 +4,14 @@ import NavbarPantallaPrincipal from "./NavbarPantallaPrincipal";
 import Footer from "./Footer";
 
 // Componente de Galería
-<div class="galeria" id="galeria"></div>
+
 const Galeria = () => {
   const imagenes = ["/Recursos/Postersonic3.jpg", "/Recursos/Mario bros.jpg", "/Recursos/hxh.jpg"];
   
   return (
     <div className="PantallaPrincipal-Container">
       <h2 className="text-2xl font-bold mb-4"></h2>
+      <div class="galeria" id="galeria"></div>
       <div className="flex gap-4 flex-wrap">
         {imagenes.map((src, index) => (
           <img
